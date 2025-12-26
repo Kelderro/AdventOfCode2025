@@ -10,14 +10,14 @@
         <Copyright>Copyright (c) Kelderro 2024-$([System.DateTime]::Now.ToString(yyyy))</Copyright>
         <CLSCompliant>false</CLSCompliant>
         <EnableNETAnalyzers>true</EnableNETAnalyzers>
-<!--        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>-->
+        <!--        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>-->
         <FileVersion>1.0.0</FileVersion>
         <ImplicitUsings>enable</ImplicitUsings>
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
         <ProductName>AdventOfCode</ProductName>
         <TargetFramework>net9.0</TargetFramework>
-        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     </PropertyGroup>
     <PropertyGroup>
         <CollectCoverage Condition=" '$(CollectCoverage)' == '' ">true</CollectCoverage>

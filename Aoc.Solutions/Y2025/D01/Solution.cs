@@ -1,27 +1,12 @@
 namespace Aoc.Solutions.Y2025.D01;
 
 [PuzzleInfo("Secret Entrance")]
-public sealed class Solution : SolutionBase
+internal sealed class Solution : SolutionBase
 {
     public override object Run(int part)
     {
         var input = GetInputLines();
 
-        var sampleInput = """
-                          L68
-                          L30
-                          R48
-                          L5
-                          R60
-                          L55
-                          L1
-                          L99
-                          R14
-                          L82
-                          """.Split(Environment.NewLine);
-
-        input = sampleInput;
-        
         LogsEnabled = false;
         
         return part switch
@@ -32,14 +17,14 @@ public sealed class Solution : SolutionBase
         };
     }
 
-    private int Part01(IEnumerable<string> input)
+    internal int Part01(IEnumerable<string> input)
     {
         var (dialEndsAtZeroCount, _) = Solve(input);
         
         return dialEndsAtZeroCount;
     }
 
-    private int Part02(IEnumerable<string> input)
+    internal int Part02(IEnumerable<string> input)
     {
         var (_, dialPassingByZeroCount) = Solve(input);
         

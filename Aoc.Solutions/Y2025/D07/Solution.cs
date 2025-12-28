@@ -3,7 +3,7 @@ using System.Text;
 namespace Aoc.Solutions.Y2025.D07;
 
 [PuzzleInfo("Laboratories")]
-public sealed class Solution : SolutionBase
+internal sealed class Solution : SolutionBase
 {
     public override object Run(int part)
     {
@@ -40,7 +40,7 @@ public sealed class Solution : SolutionBase
         };
     }
 
-    private int Part01(IList<string> input)
+    internal int Part01(IList<string> input)
     {
         var beamSplitCount = 0;
         for (var r = 1; r < input.Count; r++)

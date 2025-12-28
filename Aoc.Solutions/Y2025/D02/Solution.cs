@@ -3,7 +3,7 @@ using System.Numerics;
 namespace Aoc.Solutions.Y2025.D02;
 
 [PuzzleInfo("Gift Shop")]
-public sealed class Solution : SolutionBase
+internal sealed class Solution : SolutionBase
 {
     public override object Run(int part)
     {
@@ -27,7 +27,7 @@ public sealed class Solution : SolutionBase
         };
     }
 
-    private int Part01(IEnumerable<string> input)
+    public int Part01(IEnumerable<string> input)
     {
         var splitInput = input.Select(x => x.Split('-'));
 
@@ -42,7 +42,11 @@ public sealed class Solution : SolutionBase
             }    
         }
         
-        
+        return 0;
+    }
+
+    public int Part02(IEnumerable<string> input)
+    {
         return 0;
     }
 }

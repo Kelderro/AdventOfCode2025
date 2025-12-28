@@ -74,7 +74,7 @@ internal sealed class SolutionRunner(IConfiguration configuration, InputProvider
 
         if (CheckSolutionInputSpecific(solution, out var message)) Log(year, day, message, ConsoleColor.DarkYellow);
 
-        for (var i = 0; i < solution.Parts; i++) RunPartInternal(solution, year, day, i + 1);
+        for (var i = 0; i < SolutionBase.Parts; i++) RunPartInternal(solution, year, day, i + 1);
     }
 
     private static void RunPartInternal(SolutionBase solutionInstance, int year, int day, int part)

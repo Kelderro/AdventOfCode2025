@@ -3,27 +3,12 @@ using System.Drawing;
 namespace Aoc.Solutions.Y2025.D04;
 
 [PuzzleInfo("Printing Department")]
-public sealed class Solution : SolutionBase
+internal sealed class Solution : SolutionBase
 {
     public override object Run(int part)
     {
         var input = GetInputLines();
 
-        var sampleInput = """
-                          ..@@.@@@@.
-                          @@@.@.@.@@
-                          @@@@@.@.@@
-                          @.@@@@..@.
-                          @@.@@@@.@@
-                          .@@@@@@@.@
-                          .@.@.@.@@@
-                          @.@@@.@@@@
-                          .@@@@@@@@.
-                          @.@.@@@.@.
-                          """.Split(Environment.NewLine);
-
-        // input = sampleInput;
-        
         LogsEnabled = true;
         
         return part switch
@@ -34,7 +19,7 @@ public sealed class Solution : SolutionBase
         };
     }
 
-    private int Part01(IList<string> input)
+    internal int Part01(IList<string> input)
     {
         // Create grid
         var grid = new char[input.Count, input[0].Length];
@@ -56,7 +41,7 @@ public sealed class Solution : SolutionBase
         return CountMarkers(grid);
     }
     
-    private int Part02(IList<string> input)
+    internal int Part02(IList<string> input)
     {
         // Create grid
         var grid = new char[input.Count, input[0].Length];

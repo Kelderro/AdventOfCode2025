@@ -11,7 +11,7 @@ public abstract class SolutionBase
     public const string DayStringFormat = "{0:D2}";
     public const string PuzzleNotSolvedString = "Puzzle not solved!";
 
-    public virtual int Parts => 2;
+    public static int Parts => 2;
 
     public bool LogsEnabled { get; set; }
     public string InputPath { get; set; } = string.Empty;

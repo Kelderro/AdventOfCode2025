@@ -4,7 +4,7 @@ using System.Text.Json;
 namespace Aoc.Solutions.Y2025.D05;
 
 [PuzzleInfo("Cafeteria ")]
-public sealed class Solution : SolutionBase
+internal sealed class Solution : SolutionBase
 {
     public override object Run(int part)
     {
@@ -36,7 +36,7 @@ public sealed class Solution : SolutionBase
         };
     }
 
-    private int Part01(IList<string> input)
+    internal int Part01(IList<string> input)
     {
         // Split based on the empty row
         var emptyRowNumber = input.IndexOf(string.Empty);
@@ -59,7 +59,7 @@ public sealed class Solution : SolutionBase
         return freshCount;
     }
 
-    private int Part02(IList<string> input)
+    internal int Part02(IList<string> input)
     {
         // Split based on the empty row
         var emptyRowNumber = input.IndexOf(string.Empty);

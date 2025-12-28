@@ -1,0 +1,4 @@
+# Disable CA1707 (Identifiers should not contain underscores) for the whole project
+# Suppress only for test files
+[*Tests.cs]
+dotnet_diagnostic.CA1707.severity = none

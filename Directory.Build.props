@@ -27,14 +27,9 @@
     <ItemGroup>
         <PackageReference
                 Include="SonarAnalyzer.CSharp"
-                Version="10.3.0.106239"
+                Version="10.17.0.131074"
                 PrivateAssets="all"
                 Condition="$(MSBuildProjectExtension) == '.csproj'"
         />
-    </ItemGroup>
-    <ItemGroup>
-        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
-            <_Parameter1>$(AssemblyName).UnitTests</_Parameter1>
-        </AssemblyAttribute>
     </ItemGroup>
 </Project>

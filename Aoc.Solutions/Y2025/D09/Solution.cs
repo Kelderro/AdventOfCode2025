@@ -3,7 +3,7 @@ using System.Numerics;
 namespace Aoc.Solutions.Y2025.D09;
 
 [PuzzleInfo("Movie Theater")]
-public sealed class Solution : SolutionBase
+internal sealed class Solution : SolutionBase
 {
     public override object Run(int part)
     {

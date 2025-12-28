@@ -4,7 +4,7 @@ using System.Text;
 namespace Aoc.Solutions.Y2025.D06;
 
 [PuzzleInfo("Trash Compactor")]
-public sealed class Solution : SolutionBase
+internal sealed class Solution : SolutionBase
 {
     public override object Run(int part)
     {

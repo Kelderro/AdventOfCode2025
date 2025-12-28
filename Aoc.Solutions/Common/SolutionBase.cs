@@ -25,7 +25,14 @@ public abstract class SolutionBase
 
     protected void Log(string log)
     {
-        if (LogsEnabled) Console.WriteLine(log);
+        if (LogsEnabled)
+            Console.WriteLine(log);
+    }
+
+    protected void Log(IEnumerable<string> log)
+    {
+        if (LogsEnabled)
+            log.ToList().ForEach(Console.WriteLine);
     }
     
     protected void LogGrid(char[,] array)
